@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .h{
+    color: #4464FF;
+    margin-left: 5rem;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+  
+  }  
+  .h ::after{
+    content: "|";
+    color: #999;
+    
+    margin-left: 1rem; 
+  }
+  .a{
+        font-weight: normal;
+        color: #000000;
+
+  }
+  a{text-decoration: none;
+}
+  img{
+    vertical-align: middle;
+  }
+  .bl{
+font-family: sans-serif;
+
+  }
+  ol,li{
+    color: #000000;
+    margin-bottom: 6px;
+  }
+ol a{
+  color: #4464FF;
+}
+h2{
+  font-family: sans-serif;
+margin-left: 7px;
+color: #222222;
+font-size: 2rem;
+font-weight: normal;
+}
+p{font-family: sans-serif;
+}
+h3,h4,h5{
+   font-family: sans-serif;
+ margin-left: 7px;
+color: #222222;
+font-size: 25px;
+
+}
+code{
+  background-color: #f3f4f6;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #222222;
+}
+.sp{
+  margin-left: 1rem;
+}
+</style>
+
+    <header>
+
+           
+            <nav class="h">
+                 <img src="https://getcomposer.org/img/logo-composer-transparent.png" alt="compose logo" width="2%" >
+                <a href="#">Home</a>
+                <a href="#" class="a">Getting Started</a>
+                 <a href="#">Download</a>
+                  <a href="#">Documentation</a>
+                   <a href="#">Browse Packages</a>
+               
+            </nav>
+    
+
+
+ </header>
+    <body>
+    
+        <ol class="bl">
+   <li><a href="#">Dependency management</a></li>
+   <li><a href="#">System Requirements</a></li>
+   <li><a href="#">Installation - Linux / Unix / macOS</a>
+  <ol>
+    <li><a href="#"><a>Downloading the Composer Executable</a>
+    <ol>
+      <li><a href="#">Locally</a></li>
+      <li><a href="#">Globally</a></li>
+     </ol>
+     </li>
+     </ol>
+    </li>
+
+   <li><a href="#">Installation - Windows</a>
+   <ol>
+    <li><a href="#">Using the Installer</a></li>
+    <li><a href="#">Manual Installation</a></li>
+   </ol>
+   </li>
+   <li><a href="#">Docker Image</a></li>
+   <li><a href="#">Using Composer</a></li>
+   </ol>
+
+  <h2>Introduction <a href="#intro" style="color: #CCCCD3;">#</a></h2>
+  <p>
+Composer is a tool for dependency management in PHP. It allows you to declare the libraries 
+your project depends on and it will manage (install/update) them for you.
+
+  </p>
+  <h3>Dependency management <a href="#depend" style="color: #CCCCD3;">#</a></h3>
+
+  <p>Composer is <b>not</b> a package manager in the same sense as Yum or Apt are. Yes, 
+    it deals with "packages" or libraries, but it manages them on a per-project basis,
+     installing them in a directory (e.g. <code>vendor</code>) inside your project. 
+     By default, it does not install anything globally. Thus, it is a dependency manager.
+      It does however support a <a href="#" style="color: #4464FF;">"global"</a> project for convenience via the global command.
+  </p>
+
+  <p class="sp">This idea is not new and Composer is strongly inspired by node's <a href="#" style="color: #4464FF;">npm 
+ </a> and ruby's <a href="#" style="color: #4464FF;">bundler.</a></p>
+ <p>Suppose:</p>
+ <ol style="font-family: sans-serif;">
+  <li>You have a project that depends on a number of libraries.</li>
+  <li>Some of those libraries depend on other libraries.</li>
+ </ol>
+ <p>Composer:</p>
+ <ol  style="font-family: sans-serif;">
+  <li>Enables you to declare the libraries you depend on.</li>
+  <li>Finds out which versions of which packages can and need to be installed, and installs them 
+    (meaning it downloads them into your project).</li>
+  <li>You can update all your dependencies in one command.</li>
+ </ol>
+ <p>See the <a href="#" style="color: #4464FF;"> Basic usage</a> chapter for more details on declaring dependencies.</p>
+    </body>
+    <h4>System Requirements <a href="system r" style="color: #CCCCD3;">#</a></h4>
+<p>Composer in its latest version requires PHP 7.2.5 to run. A long-term-support version (2.2.x) still offers 
+  support for PHP 5.3.2+ in case you are stuck with a legacy PHP version. A few sensitive php settings and 
+  compile flags are also required, but when using the installer you will be warned about any incompatibilities.</p>
+  <p>Composer needs several supporting applications to work effectively, making the process of handling package
+     dependencies more efficient. For decompressing files, Composer relies on tools like <code>7z</code> <code>(or 7zz)</code>, 
+    <code>gzip</code>, <code>tar</code>, <code>unrar</code>, <code>unzip </code>and <code>xz</code>. As for version control systems, Composer integrates seamlessly with Fossil,
+      Git, Mercurial, Perforce and Subversion, thereby ensuring the application's smooth operation and management of 
+      library repositories. Before using Composer, ensure that these dependencies are correctly installed on your system.
+    </p>
+    <p>Composer is multi-platform and we strive to make it run equally well on Windows, Linux and macOS.</p>
+     <h5> Installation - Linux / Unix / macOS <a href="system r" style="color: #CCCCD3;">#</a></h5>
+
+</html>
